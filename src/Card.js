@@ -1,25 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({whsite}, props) => {
+const Card = ({whsite}) => {
     // const {index, picture, city, address, bedrooms, bathrooms, carSpaces} = site;
-    const {index, id, region, site} = whsite;
-    console.log(props.site)
-    console.log(site)
+    const {index, id, site, image_url, states, http_url} = whsite;
+    
     return (
         <div id={`card-${index}`} className="card">
-           
+           <a href={http_url}><img src={image_url} alt={id}/></a>
             <div className="details">
-                <span className="index">{index+1}</span>
+                <span className="index"></span>
                 <p className="location">
-                    {region}<br />
                     {site}
                 </p>
                 <ul className="features">
-                    <li className="icon-bed">{index} <span>bedrooms</span></li>
-                    <li className="icon-bath">{id} <span>bathrooms</span></li>
-                    <li className="icon-car">{region} <span>parking spots</span></li>
-                    {/* <li className="icon-car">{props.site.id} <span>id</span></li> */}
+                    <li className="icon-house">{states} <span>Country</span></li>
                 </ul>
             </div>
         </div>
@@ -27,7 +22,7 @@ const Card = ({whsite}, props) => {
 }
 
 Card.propTypes = {
-    property: PropTypes.object.isRequired
+    whsite: PropTypes.object.isRequired
 }
 
 export default Card;

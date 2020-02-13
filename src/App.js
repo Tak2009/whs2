@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './Card';
-import data from './data/data'
 import logo from './assets/logo.svg';
 
 // class component
@@ -19,14 +18,6 @@ class App extends Component {
         sites: sites,
         site: sites[0]
        }));
-}
-
-　  constructor(props){
-  super(props);
-  this.state = {
-    properties: data.properties,
-    property: data.properties[0]
-  }
 }
 
 nextSite = () => {
