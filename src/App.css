@@ -372,9 +372,9 @@ section {
   margin: 0 auto; }
   .cards-slider:after {
     content: '';
-    display: block;
+    display: none;
     width: 100%;
-    height: 264px;
+    height: 410px;
     outline: 5px solid #61DAFB;
     position: absolute;
     top: 0;
