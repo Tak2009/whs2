@@ -89,6 +89,10 @@ section {
         background-size: auto 100%;
         background-repeat: no-repeat; }
 
+        .card a {
+          position: relative;
+        }
+        
 /* #endregion */
 /* #region cards slider */
 .cards-slider-wrapper {
