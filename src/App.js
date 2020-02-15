@@ -56,7 +56,7 @@ render() {
         <div className="page">
             <section>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>World Heritage Site</h1>
+                <h1>World Heritage Sites in Latin America and the Caribbean Region</h1>
             </section>
 
             <div className="col">
