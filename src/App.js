@@ -6,12 +6,12 @@ import logo from './assets/logo.svg';
 // class component
 class App extends Component {
 
-  state = {
-    sites: null,
-    site: null,
+state = {
+  sites: null,
+  site: null,
   }
 
-  componentDidMount() {
+componentDidMount() {
     fetch("http://localhost:4000/latinamericas")
       .then(response => response.json())
       .then(sites => this.setState({ 
@@ -45,11 +45,11 @@ render() {
       <div className="App">
 
         <button 
-          onClick={() => this.nextSite()} 
+          onClick={this.nextSite} 
           disabled={site.index === sites.length-1}
         >Next</button>
         <button 
-          onClick={() => this.prevSite()} 
+          onClick={this.prevSite} 
           disabled={site.index === 0}
         >Prev</button>
 

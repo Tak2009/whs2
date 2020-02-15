@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({whsite}) => {
-    // const {index, picture, city, address, bedrooms, bathrooms, carSpaces} = site;
     const {index, id, site, image_url, states, http_url, short_description} = whsite;
     
     return (
