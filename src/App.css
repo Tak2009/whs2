@@ -353,7 +353,7 @@ section {
     opacity: 1; }
 
 .col {
-  height: 264px;
+  height: 300px;
   position: relative; }
   .col:before, .col:after {
     content: '';
