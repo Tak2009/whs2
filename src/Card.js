@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({whsite}) => {
-    const {index, id, site, image_url, states, http_url, short_description} = whsite;
-    console.log(image_url)
+    const {index, id, site, image_pic, states, http_url, short_description} = whsite;
     return (
         <div id={`card-${index}`} className="card">
-           <img src={image_url} alt={id}/>
+           <img src={require(`./img/${image_pic}`)} alt={id}/>
+           {/* <img src={image_url} alt={id}/> */}
             <div className="details">
                 <span className="index"></span>
                 <p className="location">{site}</p>
