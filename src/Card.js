@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Card = ({whsite}) => {
     const {index, id, site, image_url, states, http_url, short_description} = whsite;
-    
+    console.log(image_url)
     return (
         <div id={`card-${index}`} className="card">
            <img src={image_url} alt={id}/>

@@ -12,7 +12,7 @@ state = {
   }
 
 componentDidMount() {
-    fetch("http://localhost:4000/latinamericas")
+    fetch("http://localhost:3000/latinamericas")
       .then(response => response.json())
       .then(sites => this.setState({ 
         sites: sites,
