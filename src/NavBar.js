@@ -22,7 +22,7 @@ const NavBar = () => {
         activeStyle={{
           background: "yellow"
         }}
-      >Latin</NavLink>
+      >Latin Americe</NavLink>
       <NavLink 
         style={link} 
         to="/apacs"
