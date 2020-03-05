@@ -7,19 +7,12 @@ import logo from './assets/logo.svg';
 // class component
 class Page extends Component {
 
-state = {
-  sites: null,
-  site: null,
-  }
 
-componentDidMount() {
-    fetch("http://localhost:3000/latinamericas")
-      .then(response => response.json())
-      .then(sites => this.setState({ 
-        sites: sites,
-        site: sites[0]
-       }));
-}
+
+state = {
+  sites: this.props.sites,
+  site: this.props.sites[0],
+  }
 
 nextSite = () => {
   const newIndex = this.state.site.index+1;
@@ -37,8 +30,7 @@ prevSite = () => {
 
 
 render() {
-  console.log(this.state.sites)
-  console.log(this.state.site)
+  console.log(this.state)
   const {sites, site} = this.state;
   return (
     <div>
