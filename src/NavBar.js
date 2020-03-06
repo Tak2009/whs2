@@ -30,6 +30,13 @@ const NavBar = () => {
           background: "yellow"
         }}
       >Apac</NavLink>
+      <NavLink 
+        style={link} 
+        to="/europe_america"
+        activeStyle={{
+          background: "yellow"
+        }}
+      >Europe and North America</NavLink>
     
    </div>
   );

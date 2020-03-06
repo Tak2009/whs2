@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({whsite}) => {
+    console.log(whsite.image_pic)
     const {index, id, site, image_pic, states, http_url, short_description} = whsite;
     return (
         <div id={`card-${index}`} className="card">
