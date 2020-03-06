@@ -18,18 +18,18 @@ const NavBar = () => {
     <div className="navbar">
       <NavLink 
         style={link} 
-        to="/latin_americas"
+        to="/latin_america"
         activeStyle={{
           background: "yellow"
         }}
       >Latin America</NavLink>
       <NavLink 
         style={link} 
-        to="/apacs"
+        to="/apac"
         activeStyle={{
           background: "yellow"
         }}
-      >Apac</NavLink>
+      >Asia-Pacific</NavLink>
       <NavLink 
         style={link} 
         to="/europe_america"

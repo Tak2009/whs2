@@ -47,9 +47,9 @@ class App extends Component {
         <div>
           <NavBar />
           {/* <Route exact path="/latin_americas" component={Page} sites={this.state.sites}/>  */}
-          <Route exatc path="/latin_americas" render={routerProps => <Page {...routerProps} sites={this.state.sites}/>}/>
+          <Route exatc path="/latin_america" render={routerProps => <Page {...routerProps} sites={this.state.sites}/>}/>
           {/* <Route exact path="/apacs" component={Page2} sites_apac={this.state.sites_apac}/>  */}
-          <Route exatc path="/apacs" render={routerProps => <Page2 {...routerProps} sites_apac={this.state.sites_apac}/>}/>
+          <Route exatc path="/apac" render={routerProps => <Page2 {...routerProps} sites_apac={this.state.sites_apac}/>}/>
           <Route exatc path="/europe_america" render={routerProps => <Page3 {...routerProps} sites_europe_a={this.state.sites_europe_a}/>}/>
         </div>
       </Router>
